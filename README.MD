@@ -1,6 +1,5 @@
 Grade Tracker
-By: Promise Abel, Justin Gallant and Kristyn Serniuk
-
+By: Promise Abel and 2 fellow students
 
 Motivation
 
