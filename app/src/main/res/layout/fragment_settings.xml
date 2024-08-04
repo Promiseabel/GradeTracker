@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="219dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/setting_notifications"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/scaleTitle"
+        android:layout_width="219dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/setting_gpascale"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/SchemeTitle"
+        android:layout_width="331dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/setting_grading_scheme"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/text_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/add_schemes"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:text="@string/setting_add_scheme"
+        app:icon="@drawable/baseline_add_24"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SchemeTitle"
+        app:layout_constraintVertical_bias="0.075"
+        android:visibility="invisible"/>
+
+    <Switch
+        android:id="@+id/allowNotifications"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/setting_allow_notifications"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/alerts"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allowNotifications" />
+
+    <TextView
+        android:id="@+id/alertsTitle"
+        android:layout_width="167dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_alerts_arrive"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/alerts"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allowNotifications" />
+
+    <Spinner
+        android:id="@+id/gpaScale"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scaleTitle"
+        android:visibility="invisible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="navEditor-manualLayoutAlgorithm2">
+    <option name="myPositions">
+      <map>
+        <entry key="mobile_navigation.xml">
+          <value>
+            <LayoutPositions>
+              <option name="myPositions">
+                <map>
+                  <entry key="navigation_courses">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="14" />
+                            <option name="y" value="297" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_navigation_courses_to_navigation_courses_history">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_navigation_courses_to_navigation_single_course">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_courses_history">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="367" />
+                            <option name="y" value="219" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_navigation_courses_history_to_navigation_single_course">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_deliverables">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="18" />
+                            <option name="y" value="590" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_navigation_deliverables_to_navigation_single_course">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_settings">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="navigation_single_course">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="716" />
+                            <option name="y" value="502" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </LayoutPositions>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_courses">
+
+    <fragment
+        android:id="@+id/navigation_courses"
+        android:name="ca.unb.mobiledev.group18project.ui.courses.CoursesFragment"
+        android:label="@string/title_courses"
+        tools:layout="@layout/fragment_courses">
+        <action
+            android:id="@+id/action_navigation_courses_to_navigation_courses_history"
+            app:destination="@id/navigation_courses_history" />
+        <action
+            android:id="@+id/action_navigation_courses_to_navigation_single_course"
+            app:destination="@id/navigation_single_course" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deliverables"
+        android:name="ca.unb.mobiledev.group18project.ui.deliverables.DeliverablesFragment"
+        android:label="@string/title_deliverables"
+        tools:layout="@layout/fragment_deliverables" >
+        <action
+            android:id="@+id/action_navigation_deliverables_to_navigation_single_course"
+            app:destination="@id/navigation_single_course" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ca.unb.mobiledev.group18project.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_courses_history"
+        android:name="ca.unb.mobiledev.group18project.ui.courses.CoursesHistoryFragment"
+        android:label="@string/title_courses_history"
+        tools:layout="@layout/fragment_courses_history">
+        <action
+            android:id="@+id/action_navigation_courses_history_to_navigation_single_course"
+            app:destination="@id/navigation_single_course" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_single_course"
+        android:name="ca.unb.mobiledev.group18project.ui.singlecourse.SingleCourseFragment"
+        android:label="@string/title_single_course"
+        tools:layout="@layout/fragment_single_course" />
+</navigation>

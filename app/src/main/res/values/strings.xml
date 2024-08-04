@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Grade Tracker</string>
+    <string name="title_courses">Courses</string>
+    <string name="title_deliverables">Deliverables</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_courses_history">History</string>
+    <string name="title_single_course">(Course Name)</string>
+    <string name="setting_notifications">Notifications</string>
+    <string name="setting_gpascale">GPA Scale</string>
+    <string name="setting_grading_scheme">Grading Scheme</string>
+    <string name="setting_add_scheme">Add Scheme</string>
+    <string name="setting_allow_notifications">Grading Scheme</string>
+    <string name="setting_alerts_arrive">Alerts Arrive:</string>
+    <string name="deliverables_button_add_deliverable">Add Deliverable</string>
+    <string name="courses_button_add_course">Add Course</string>
+    <string name="courses_button_courses_history">Courses History</string>
+    <string name="courses_gpa">GPA: 0</string>
+    <string name="courses_cgpa">CGPA: 0</string>
+    <string name="course_percent_complete">Percent Complete:</string>
+    <string name="course_current_grade">Current Grade:</string>
+    <string name="course_running_grade">Running Grade:</string>
+    <string name="course_predictions">Grade Predictions</string>
+</resources>

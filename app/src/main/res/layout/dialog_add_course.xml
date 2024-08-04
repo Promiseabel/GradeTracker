@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Course Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter course name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewCourseName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseName" />
+
+    <TextView
+        android:id="@+id/textViewCourseCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Credit Hours:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourseName" />
+
+    <EditText
+        android:id="@+id/editTextCourseCH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter course credit hours"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseCH" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Course Start/End Dates:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourseCH" />
+
+    <Button
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Start Date"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/startDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Additional Information:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Optional Course Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformation"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

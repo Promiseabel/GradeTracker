@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <!-- deliverable -->
+    <TextView
+        android:id="@+id/deliverable_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:textSize="16sp"
+        android:textColor="#808080"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/deliverable_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toEndOf="@id/deliverable_name"
+        android:layout_toStartOf="@id/deliverable_weight"
+        android:textColor="#808080"
+        android:textSize="16sp" />
+
+    <!-- deliverable -->
+    <TextView
+        android:id="@+id/deliverable_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deliverable_weight"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#808080" />
+
+    <!-- deliverable -->
+    <TextView
+        android:id="@+id/deliverable_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/image_menu"
+        android:layout_centerHorizontal="false"
+        android:textSize="16sp"
+        android:textColor="#808080" />
+
+
+
+    <!-- Three-dot Menu (Meatball menu) -->
+    <ImageView
+        android:id="@+id/image_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_more_horiz_24"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp" />
+
+</RelativeLayout>

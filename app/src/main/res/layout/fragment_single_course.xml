@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.singlecourse.SingleCourseFragment">
+
+    <Button
+        android:id="@+id/add_deliverables"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="384dp"
+        android:text="@string/deliverables_button_add_deliverable"
+        app:icon="@drawable/baseline_add_24"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/percentComplete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/currentGrade"
+        android:layout_width="248dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/course_current_grade"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/runningGrade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/runningGradePercentage"
+        android:layout_width="57dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="0%"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gradePredictions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/runningGrade" />
+
+    <TextView
+        android:id="@+id/percentCompletePercentage"
+        android:layout_width="57dp"
+        android:layout_height="25dp"
+        android:text="0%"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/currentGradePercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/percentComplete" />
+
+    <TextView
+        android:id="@+id/currentGradePercentage"
+        android:layout_width="57dp"
+        android:layout_height="25dp"
+        android:text="0%"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/runningGradePercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/currentGrade"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/runningGrade"
+        android:layout_width="248dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/course_running_grade"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gradePredictions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/percentComplete"
+        android:layout_width="248dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/course_percent_complete"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/currentGrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/gradePredictions"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:text="@string/course_predictions"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/deliverable_list"
+        android:layout_width="390dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_deliverables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

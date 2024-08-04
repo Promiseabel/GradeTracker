@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/editTextDeliverableWeight"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter deliverable worth"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeliverableGrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDeliverableWorth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Deliverable Worth:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDeliverableWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueDate"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/textViewDeliverableGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliverable Grade:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDeliverableGrade"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeliverableGrade"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Enter Deliverable Grade"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInformation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeliverableName"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:hint="Enter Deliverable name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeliverableName" />
+
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Course:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDeliverableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deliverable Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCourses" />
+
+    <Button
+        android:id="@+id/dueTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="55dp"
+        android:text="Due Time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dueDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dueDate" />
+
+    <Button
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Due Date"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDeliverableDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeliverableDate" />
+
+    <Spinner
+        android:id="@+id/spinnerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/rounded_corner_gpa"
+        android:hint="Enter course name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCourseName" />
+
+    <TextView
+        android:id="@+id/textViewDeliverableDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Deliverable Due Date/Time:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDeliverableName" />
+
+    <TextView
+        android:id="@+id/textViewInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information:"
+        app:layout_constraintBottom_toTopOf="@+id/infoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:hint="Optional Deliverable Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
