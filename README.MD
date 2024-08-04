@@ -1,4 +1,8 @@
 Grade Tracker
+
+Simplifies the process of tracking and calculating grades for students
+Developed GradeTracker, an Android app using Android Studio and Kotlin, designed to simplify grade tracking, GPA calculation, and deliverable management for students, enhancing their academic experience.
+
 By: Promise Abel and 2 fellow students
 
 Motivation
